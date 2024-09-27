@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Application Form</h2>
+    <form id="applicationForm" action="send_email.php" method="post" enctype="multipart/form-data">
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="photo">Upload Photo:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+        <label for="signature">Upload Signature:</label><br>
+        <input type="file" id="signature" name="signature" accept="image/*" required><br><br>
+
+        <label for="qualification">Education Qualification:</label><br>
+        <input type="text" id="qualification" name="qualification" required><br><br>
+
+        <input type="submit" value="Submit">
+        <button type="button" onclick="printPDF()">Print as PDF</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
